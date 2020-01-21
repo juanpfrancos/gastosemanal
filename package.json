@@ -1,0 +1,8 @@
+{
+  "name": "gastosemanal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:juanpfrancos/gastosemanal.git",
+  "author": "Juan Pablo <juanpanime@gmail.com>",
+  "license": "MIT"
+}
