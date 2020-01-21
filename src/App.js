@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Header from './Components/Header'
 import Container from '@material-ui/core/Container'
+import FormularioGasto from './Components/Form'
 
 class App extends Component{
   render(){
@@ -18,6 +19,7 @@ class App extends Component{
               </div>
             </div>
         </div>
+        <FormularioGasto />
       </Container>
       </div>
     )
