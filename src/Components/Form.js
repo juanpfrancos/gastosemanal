@@ -17,7 +17,6 @@ class FormularioGasto extends Component{
         //Agregar objeto y enviarlo por props
 
         //Resetear formulario
-
         e.currentTarget.reset();
         }    
     render() {
