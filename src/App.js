@@ -4,6 +4,29 @@ import Container from '@material-ui/core/Container'
 import FormularioGasto from './Components/Form'
 
 class App extends Component{
+
+//Agregar un nuevo gasto al state 
+ state ={
+   presupuesto: '',
+   restante: '',
+   gastos: {}
+ }
+
+agregarGasto = gasto =>{
+  //Tomar una copia del state actual 
+    const gastos = {...this.state.gastos};
+   
+  //Agregar gasto al objeto del state
+    gastos[`gasto${Date.now()}`] = gasto;
+
+
+  //Ponerlo en el state
+  this.setState({
+    gastos
+  })
+}
+
+
   render(){
     return(
       <div>
@@ -19,7 +42,9 @@ class App extends Component{
               </div>
             </div>
         </div>
-        <FormularioGasto />
+        <FormularioGasto 
+          agregarGasto ={this.agregarGasto}
+        />
       </Container>
       </div>
     )
