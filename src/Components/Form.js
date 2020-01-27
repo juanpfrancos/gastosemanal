@@ -12,7 +12,7 @@ class FormularioGasto extends Component{
             const gasto ={
                 nombreGasto : this.nombreGasto.current.value,
                 cantidadGasto :this.cantidadGasto.current.value
-            }
+            }   
         //Agregar objeto y enviarlo por props
 
             this.props.agregarGasto(gasto);

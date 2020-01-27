@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Header from './Components/Header'
 import Container from '@material-ui/core/Container'
 import FormularioGasto from './Components/Form'
+import Listado from './Components/Listado'
 
 class App extends Component{
 
@@ -35,16 +36,18 @@ agregarGasto = gasto =>{
         <div>
             <div>
               <div className="columna-1">
-
+                  <FormularioGasto 
+                  agregarGasto ={this.agregarGasto}
+                  />
               </div>
               <div className="columna-2">
-                 
+                  <Listado
+                  gastos={this.state.gastos}
+                  />
               </div>
             </div>
         </div>
-        <FormularioGasto 
-          agregarGasto ={this.agregarGasto}
-        />
+
       </Container>
       </div>
     )
