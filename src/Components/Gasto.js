@@ -2,10 +2,12 @@ import React, {Component} from 'react';
 
 class Gasto extends Component{
     render() {
+        const {cantidadGasto, nombreGasto} = this.props.gasto;
+
         return (
-            <div>
-                En el Gasto
-            </div>
+            <li>
+                {nombreGasto}      <span></span>          {cantidadGasto}
+            </li>
         );
     }
 }
