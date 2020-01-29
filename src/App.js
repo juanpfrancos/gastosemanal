@@ -3,6 +3,7 @@ import Header from './Components/Header'
 import Container from '@material-ui/core/Container'
 import FormularioGasto from './Components/Form'
 import Listado from './Components/Listado'
+import {validarPresupuesto} from './Components/Helpers'
 
 class App extends Component{
 
@@ -14,10 +15,20 @@ class App extends Component{
  }
 
  componentDidMount(){
-   let presupuesto = prompt('Cuál es el presupuesto')
-    console.log(presupuesto);    
+   this.obtenerPresupuesto();
   }
 
+  obtenerPresupuesto = () =>{
+    let presupuesto = prompt('Cuál es el presupuesto')
+    //Muestra si el valor ingresado es válido
+    let resultado = validarPresupuesto(presupuesto);
+    if (resultado) {
+      console.log('Válido');
+    }
+    else{
+      console.log('Presupuesto no válido');
+    }
+  }
 agregarGasto = gasto =>{
   //Tomar una copia del state actual 
     const gastos = {...this.state.gastos};
