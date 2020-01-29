@@ -13,6 +13,11 @@ class App extends Component{
    gastos: {}
  }
 
+ componentDidMount(){
+   let presupuesto = prompt('Cuál es el presupuesto')
+    console.log(presupuesto);    
+  }
+
 agregarGasto = gasto =>{
   //Tomar una copia del state actual 
     const gastos = {...this.state.gastos};

@@ -6,7 +6,7 @@ class Gasto extends Component{
 
         return (
             <li>
-                {nombreGasto}      <span></span>          {cantidadGasto}
+                {nombreGasto}      <span> </span>          {cantidadGasto}
             </li>
         );
     }
