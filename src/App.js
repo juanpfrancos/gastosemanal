@@ -23,11 +23,14 @@ class App extends Component{
     //Muestra si el valor ingresado es válido
     let resultado = validarPresupuesto(presupuesto);
     if (resultado) {
-      console.log('Válido');
-    }
+      this.setState({
+        presupuesto: presupuesto,
+        restante: presupuesto  
+      })
+          }
     else{
-      console.log('Presupuesto no válido');
-    }
+      this.obtenerPresupuesto();
+        }
   }
 agregarGasto = gasto =>{
   //Tomar una copia del state actual 
