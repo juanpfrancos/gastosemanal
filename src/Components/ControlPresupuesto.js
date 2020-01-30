@@ -6,7 +6,7 @@ class ControlPresupuesto extends Component{
     render() {
         return (
             <div>
-                En el control
+                <h1>Control de Presupuesto</h1>
                 <Presupuesto 
                     presupuesto={this.props.presupuesto}
                 />

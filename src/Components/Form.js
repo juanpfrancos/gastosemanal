@@ -26,7 +26,7 @@ class FormularioGasto extends Component{
         return (
             //Invoco el método crearGasto en el formulario
            <form onSubmit={this.crearGasto}>
-               <h1>Agrega tus datos</h1>
+               <h1>Agrega tus gastos</h1>
                <label>Agrega tus gastos</label>
                <input ref={this.nombreGasto} type="text" paleceholder="Ej.Comida"/>
                <label>Cantidad</label>

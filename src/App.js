@@ -78,11 +78,12 @@ restarPresupuesto = cantidad =>{
   render(){
     return(
       <div>
-      <Container maxWidth="sm">
-        <Header titulo='Title'/>
-        <div>
+      <Container maxWidth="sm">        
+       <Header titulo='Control de Gastos'/> 
+       <div>
             <div>
               <div className="columna-1">
+                  
                   <FormularioGasto 
                   agregarGasto ={this.agregarGasto}
                   />
