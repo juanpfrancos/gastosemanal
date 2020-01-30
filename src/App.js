@@ -4,6 +4,7 @@ import Container from '@material-ui/core/Container'
 import FormularioGasto from './Components/Form'
 import Listado from './Components/Listado'
 import {validarPresupuesto} from './Components/Helpers'
+import ControlPresupuesto from './Components/ControlPresupuesto'
 
 class App extends Component{
 
@@ -66,7 +67,7 @@ agregarGasto = gasto =>{
               </div>
             </div>
         </div>
-
+        <ControlPresupuesto />
       </Container>
       </div>
     )
