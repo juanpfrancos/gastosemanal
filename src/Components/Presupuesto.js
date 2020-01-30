@@ -4,7 +4,7 @@ class Presupuesto extends Component{
     render() {
         return (
             <div>
-                Presupuesto
+            Presupuesto: {this.props.presupuesto}
             </div>
         )
     }

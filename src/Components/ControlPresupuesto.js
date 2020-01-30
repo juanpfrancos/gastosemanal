@@ -7,8 +7,12 @@ class ControlPresupuesto extends Component{
         return (
             <div>
                 En el control
-                <Presupuesto />
-                <Restante />
+                <Presupuesto 
+                    presupuesto={this.props.presupuesto}
+                />
+                <Restante 
+                    restante={this.props.restante}
+                />
             </div>
         )
     }

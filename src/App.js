@@ -67,7 +67,10 @@ agregarGasto = gasto =>{
               </div>
             </div>
         </div>
-        <ControlPresupuesto />
+        <ControlPresupuesto 
+          presupuesto={this.state.presupuesto}
+          restante={this.state.restante}
+        />
       </Container>
       </div>
     )

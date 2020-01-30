@@ -4,7 +4,7 @@ class Restante extends Component{
     render() {
         return (
             <div>
-                Restante
+            Restante: {this.props.restante}
             </div>
         )
     }
