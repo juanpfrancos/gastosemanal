@@ -34,19 +34,46 @@ class App extends Component{
         }
   }
 agregarGasto = gasto =>{
-  //Tomar una copia del state actual 
+  //Tomar una copia del state actual en forma de string con el spread operator
     const gastos = {...this.state.gastos};
    
   //Agregar gasto al objeto del state
     gastos[`gasto${Date.now()}`] = gasto;
 
+  //Restar al presupuesto
 
+  this.restarPresupuesto(gasto.cantidadGasto);
+  
+  
+    console.log(gasto);
   //Ponerlo en el state
   this.setState({
     gastos
   })
 }
 
+
+//Restar del presupuesto cuando un gasto se crea
+
+restarPresupuesto = cantidad =>{
+  //Leer el gasto
+  let restar = Number(cantidad); //Convertir el string cantidad en número
+
+  //Tomar una copia del state actual
+  let restante = this.state.restante;
+
+  //Hacemos la resta
+  
+  restante -= restar;
+
+  //Agregamos el nuevo state
+  this.setState({
+    restante
+  }
+
+  )
+  
+}
 
   render(){
     return(
