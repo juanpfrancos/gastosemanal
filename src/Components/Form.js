@@ -27,20 +27,22 @@ class FormularioGasto extends Component{
 
         return (
             //Invoco el método crearGasto en el formulario
-           <form onSubmit={this.crearGasto}>
+           <form class="container" onSubmit={this.crearGasto}>
                <h4>Agrega tus gastos</h4>
                <div class="row">
-                    <div class="input-field col s6">
-                        <input ref={this.nombreGasto} id="IdGasto" placeholder="Gasto" type="text"/>
+                    <div class="input-field col s12 m6">
+                        <input ref={this.nombreGasto} id="IdGasto" type="text"/>
                         <label for="IdGasto">Agrega tus gastos</label>
                     </div>
-                    <div class="input-field col s6">
-                        <input ref={this.cantidadGasto} placeholder="Ej. 20000" id="Cgasto" type="text" class="validate"/>
+                    <div class="input-field col s12 m6">
+                        <input ref={this.cantidadGasto} id="Cgasto" type="text" class="validate"/>
                         <label for="Cgasto">Cantidad Gasto</label>
                     </div>
-                    <button class="btn waves-effect waves-light" type="submit" name="action" value="agregar">Submit
+                    <div class="input-field col s6">
+                    <button class="btn waves-effect waves-light" type="submit" name="action" value="agregar">Agregar
                     <i class="material-icons right">send</i>
                     </button>
+                    </div>
                 </div>  
                     <script>
                     M.AutoInit();

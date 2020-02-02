@@ -3,9 +3,7 @@ import React, {Component} from 'react';
 class Restante extends Component{
     render() {
         return (
-            <div>
-            Restante: {this.props.restante}
-            </div>
+            <a href="#!" class="collection-item">Restante: ${this.props.restante}</a>
         )
     }
 }

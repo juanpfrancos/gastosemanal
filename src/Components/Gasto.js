@@ -5,9 +5,7 @@ class Gasto extends Component{
         const {cantidadGasto, nombreGasto} = this.props.gasto;
 
         return (
-            <li>
-                {nombreGasto}      <span> </span>          {cantidadGasto}
-            </li>
+             <a href="#!" class="collection-item">{nombreGasto}<span> </span>{cantidadGasto}</a>
         );
     }
 }

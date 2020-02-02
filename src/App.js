@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Header from './Components/Header'
-import Container from '@material-ui/core/Container'
 import FormularioGasto from './Components/Form'
 import Listado from './Components/Listado'
 import {validarPresupuesto} from './Components/Helpers'
@@ -77,19 +76,16 @@ restarPresupuesto = cantidad =>{
 
   render(){
     return(
-
-      <Container maxWidth="md">
-        <div class="row"> 
+        <div class="card grey lighten-3 z-depth-4"> 
               <Header titulo='Control de Gastos'/> 
-              <div class="col s6">  
+              <div class="">  
                   <FormularioGasto agregarGasto ={this.agregarGasto} />
                   <Listado gastos={this.state.gastos}/>
               </div>
-              <div class="col s6">
+              <div class="container">
                   <ControlPresupuesto  presupuesto={this.state.presupuesto}  restante={this.state.restante} />
               </div>
         </div>
-      </Container>
     )
   }
 }

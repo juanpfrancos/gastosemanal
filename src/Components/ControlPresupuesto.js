@@ -5,14 +5,13 @@ import Restante from './Restante'
 class ControlPresupuesto extends Component{
     render() {
         return (
-            <div>
+            <div class="card grey center">
                 <h4>Control de Presupuesto</h4>
-                <Presupuesto 
-                    presupuesto={this.props.presupuesto}
-                />
-                <Restante 
-                    restante={this.props.restante}
-                />
+                <div class="collection container">
+                <Presupuesto presupuesto={this.props.presupuesto}/>
+                <Restante restante={this.props.restante}/>
+                </div>
+                <br></br>
             </div>
         )
     }
