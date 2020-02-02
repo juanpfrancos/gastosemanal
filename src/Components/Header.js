@@ -3,7 +3,7 @@ import React from 'react';
 const Header = (props) =>{
     return(
     <div class="center ">
-    <h2>{props.titulo}</h2> 
+    <h3>{props.titulo}</h3> 
     </div>
     )
     
