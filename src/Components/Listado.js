@@ -5,14 +5,15 @@ class Listado extends Component{
     render() {
         return (
             <div>
-                <h1>Listado de Gastos</h1>
+                <h4>Listado de Gastos</h4>
+
+             
                 {Object.keys(this.props.gastos).map(key => (
                     <Gasto 
                     key={key}    
                     gasto={this.props.gastos[key]}
                     />
-                ))}
-                
+                ))} 
             </div>
         );
     }

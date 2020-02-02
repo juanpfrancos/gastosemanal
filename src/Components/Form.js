@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 class FormularioGasto extends Component{
      //Refs para los campos del formulario
+    
+     
     nombreGasto = React.createRef();
     cantidadGasto = React.createRef();        
     crearGasto = (e) =>{
@@ -26,14 +28,25 @@ class FormularioGasto extends Component{
         return (
             //Invoco el método crearGasto en el formulario
            <form onSubmit={this.crearGasto}>
-               <h1>Agrega tus gastos</h1>
-               <label>Agrega tus gastos</label>
-               <input ref={this.nombreGasto} type="text" paleceholder="Ej.Comida"/>
-               <label>Cantidad</label>
-               <input ref={this.cantidadGasto} type="text" paleceholder="Ej. 20000"/>
-               <input type="submit" value="agregar"/>
-
+               <h4>Agrega tus gastos</h4>
+               <div class="row">
+                    <div class="input-field col s6">
+                        <input ref={this.nombreGasto} id="IdGasto" placeholder="Gasto" type="text"/>
+                        <label for="IdGasto">Agrega tus gastos</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input ref={this.cantidadGasto} placeholder="Ej. 20000" id="Cgasto" type="text" class="validate"/>
+                        <label for="Cgasto">Cantidad Gasto</label>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit" name="action" value="agregar">Submit
+                    <i class="material-icons right">send</i>
+                    </button>
+                </div>  
+                    <script>
+                    M.AutoInit();
+                    </script>
            </form>
+                 
         );
     }
 }

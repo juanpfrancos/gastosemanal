@@ -77,30 +77,19 @@ restarPresupuesto = cantidad =>{
 
   render(){
     return(
-      <div>
-      <Container maxWidth="sm">        
-       <Header titulo='Control de Gastos'/> 
-       <div>
-            <div>
-              <div className="columna-1">
-                  
-                  <FormularioGasto 
-                  agregarGasto ={this.agregarGasto}
-                  />
+
+      <Container maxWidth="md">
+        <div class="row"> 
+              <Header titulo='Control de Gastos'/> 
+              <div class="col s6">  
+                  <FormularioGasto agregarGasto ={this.agregarGasto} />
+                  <Listado gastos={this.state.gastos}/>
               </div>
-              <div className="columna-2">
-                  <Listado
-                  gastos={this.state.gastos}
-                  />
+              <div class="col s6">
+                  <ControlPresupuesto  presupuesto={this.state.presupuesto}  restante={this.state.restante} />
               </div>
-            </div>
         </div>
-        <ControlPresupuesto 
-          presupuesto={this.state.presupuesto}
-          restante={this.state.restante}
-        />
       </Container>
-      </div>
     )
   }
 }
