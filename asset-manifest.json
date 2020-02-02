@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/gastosemanal/static/js/main.db42e770.chunk.js",
+    "main.js.map": "/gastosemanal/static/js/main.db42e770.chunk.js.map",
+    "runtime-main.js": "/gastosemanal/static/js/runtime-main.2bad344a.js",
+    "runtime-main.js.map": "/gastosemanal/static/js/runtime-main.2bad344a.js.map",
+    "static/js/2.f57427c4.chunk.js": "/gastosemanal/static/js/2.f57427c4.chunk.js",
+    "static/js/2.f57427c4.chunk.js.map": "/gastosemanal/static/js/2.f57427c4.chunk.js.map",
+    "index.html": "/gastosemanal/index.html",
+    "precache-manifest.4d090921bbd71c94ef41eb5f076289c4.js": "/gastosemanal/precache-manifest.4d090921bbd71c94ef41eb5f076289c4.js",
+    "service-worker.js": "/gastosemanal/service-worker.js",
+    "static/js/2.f57427c4.chunk.js.LICENSE": "/gastosemanal/static/js/2.f57427c4.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2bad344a.js",
+    "static/js/2.f57427c4.chunk.js",
+    "static/js/main.db42e770.chunk.js"
+  ]
+}
